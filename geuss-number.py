@@ -16,7 +16,13 @@ for x in range(1,21):
             score = score + 1
             print('Hurray')
             print(f"you guessed the right number, its {number}")
+            print('your score so far ' + str(score) + ' points')
             break
+        
     if user != number:
         print(f'your guessed the incorrect number, the correct number is: {number} ')
-print('your score is ' + score)
+        print('your score so far is ' + str(score) + ' points')
+    again = input('geuss another number? y/n ')
+    if again == 'n' or again == 'N':
+        break
+print('your final score is ' + str(score) + ' points')
